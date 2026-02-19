@@ -3,8 +3,13 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import { Dictionary } from "@/dictionaries/definition";
 
-export function BMICalculator() {
+interface BMICalculatorProps {
+  dict?: Dictionary;
+}
+
+export function BMICalculator({ dict }: BMICalculatorProps) {
   const [heightUnit, setHeightUnit] = useState<"cm" | "ft">("cm");
   const [weightUnit, setWeightUnit] = useState<"kg" | "lbs">("kg");
 
@@ -43,22 +48,37 @@ export function BMICalculator() {
     }
   };
 
+  const labels = dict?.bmi || {
+    title: "BMI Calculator (वजन जांचें)",
+    ageLabel: "Age (उम्र)",
+    weightLabel: "Weight (वजन)",
+    heightLabel: "Height (लम्बाई)",
+    feetLabel: "Feet",
+    inchesLabel: "Inches",
+    calculateBtn: "Calculate Result",
+    scoreLabel: "BMI Score",
+    underweight: "Underweight (कम वजन)",
+    normal: "Normal (सामान्य)",
+    overweight: "Overweight (अधिक वजन)",
+    obese: "Obese (मोटापा)"
+  };
+
   const getStatus = (bmi: number) => {
-    if (bmi < 18.5) return { label: "Underweight (कम वजन)", color: "text-blue-600", bg: "bg-blue-50" };
-    if (bmi < 25) return { label: "Normal (सामान्य)", color: "text-green-600", bg: "bg-green-50" };
-    if (bmi < 30) return { label: "Overweight (अधिक वजन)", color: "text-orange-600", bg: "bg-orange-50" };
-    return { label: "Obese (मोटापा)", color: "text-red-600", bg: "bg-red-50" };
+    if (bmi < 18.5) return { label: labels.underweight, color: "text-blue-600", bg: "bg-blue-50" };
+    if (bmi < 25) return { label: labels.normal, color: "text-green-600", bg: "bg-green-50" };
+    if (bmi < 30) return { label: labels.overweight, color: "text-orange-600", bg: "bg-orange-50" };
+    return { label: labels.obese, color: "text-red-600", bg: "bg-red-50" };
   };
 
   const status = bmi ? getStatus(bmi) : null;
 
   return (
     <div className="w-full max-w-md mx-auto bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
-      <h3 className="text-xl font-bold text-center mb-6 text-brand-heading">BMI Calculator (वजन जांचें)</h3>
+      <h3 className="text-xl font-bold text-center mb-6 text-brand-heading">{labels.title}</h3>
 
       {/* Age Input */}
       <div className="mb-4">
-        <label className="block text-sm font-medium text-slate-700 mb-1">Age (उम्र)</label>
+        <label className="block text-sm font-medium text-slate-700 mb-1">{labels.ageLabel}</label>
         <input
           type="number"
           value={age}
@@ -72,7 +92,7 @@ export function BMICalculator() {
         {/* Weight Section */}
         <div className="space-y-4">
           <div className="flex justify-between items-center mb-1">
-             <label className="block text-sm font-medium text-slate-700">Weight</label>
+             <label className="block text-sm font-medium text-slate-700">{labels.weightLabel}</label>
              <div className="flex bg-slate-100 p-1 rounded-lg">
                 <button
                   onClick={() => setWeightUnit("kg")}
@@ -100,7 +120,7 @@ export function BMICalculator() {
         {/* Height Section */}
         <div className="space-y-4">
           <div className="flex justify-between items-center mb-1">
-             <label className="block text-sm font-medium text-slate-700">Height</label>
+             <label className="block text-sm font-medium text-slate-700">{labels.heightLabel}</label>
              <div className="flex bg-slate-100 p-1 rounded-lg">
                 <button
                   onClick={() => setHeightUnit("cm")}
@@ -147,7 +167,7 @@ export function BMICalculator() {
       </div>
 
       <Button onClick={calculateBMI} className="w-full mt-6" size="lg">
-        Calculate Result
+        {labels.calculateBtn}
       </Button>
 
       {bmi && status && (
@@ -156,7 +176,7 @@ export function BMICalculator() {
              <span className={cn("text-sm font-bold", status.color)}>{status.label}</span>
           </div>
           <h4 className="text-5xl font-bold text-brand-heading mb-1">{bmi}</h4>
-          <p className="text-slate-400 text-xs">BMI Score {age ? `(Age: ${age})` : ""}</p>
+          <p className="text-slate-400 text-xs">{labels.scoreLabel} {age ? `(Age: ${age})` : ""}</p>
         </div>
       )}
     </div>

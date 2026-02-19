@@ -4,8 +4,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
+import { Dictionary } from "@/dictionaries/definition";
 
-export function HeroSection() {
+interface HeroSectionProps {
+  dict: Dictionary;
+}
+
+export function HeroSection({ dict }: HeroSectionProps) {
   return (
     <Section background="soft" className="min-h-[80vh] flex items-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-emerald-50 opacity-50 z-0" />
@@ -22,20 +27,21 @@ export function HeroSection() {
           className="text-left"
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-brand-primary font-medium text-sm mb-6">
-            माता-पिता के लिए विशेष जानकारी
+            {dict.hero.badge}
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-heading leading-tight mb-6">
-            वज़न कम करना इतना <span className="text-brand-primary">मुश्किल</span> क्यों है?
-          </h1>
+          <h1
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-heading leading-tight mb-6"
+            dangerouslySetInnerHTML={{ __html: dict.hero.title }}
+          />
           <p className="text-xl md:text-2xl text-brand-text mb-8 leading-relaxed">
-            और क्या Ozempic या Mounjaro आपके लिए सही विकल्प हैं? आसान भाषा में पूरी जानकारी।
+            {dict.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="shadow-lg shadow-blue-500/20">
-              पूरी जानकारी पढ़ें
+              {dict.hero.ctaPrimary}
             </Button>
             <Button variant="outline" size="lg">
-              क्या मैं योग्य हूँ?
+              {dict.hero.ctaSecondary}
             </Button>
           </div>
         </motion.div>
@@ -60,8 +66,8 @@ export function HeroSection() {
                 <div className="h-full bg-brand-primary w-1/2 rounded-full" />
              </div>
              <div className="text-center">
-               <h3 className="font-bold text-brand-heading text-lg">Health Balance</h3>
-               <p className="text-sm text-slate-500">Understanding Metabolism</p>
+               <h3 className="font-bold text-brand-heading text-lg">{dict.hero.illustrationTitle}</h3>
+               <p className="text-sm text-slate-500">{dict.hero.illustrationSubtitle}</p>
              </div>
           </div>
         </motion.div>

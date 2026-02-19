@@ -6,8 +6,13 @@ import { Heading, Text } from "@/components/ui/Typography";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
 import { HeartHandshake } from "lucide-react";
+import { Dictionary } from "@/dictionaries/definition";
 
-export function Section10() {
+interface Section10Props {
+  dict: Dictionary;
+}
+
+export function Section10({ dict }: Section10Props) {
   return (
     <Section background="gradient" className="py-24 text-center">
       <motion.div
@@ -21,23 +26,22 @@ export function Section10() {
           <HeartHandshake className="h-16 w-16 text-brand-primary" />
         </div>
 
-        <Heading level={2}>सही कदम उठाएँ (Compassionate Conclusion)</Heading>
+        <Heading level={2}>{dict.section10.title}</Heading>
 
         <Text variant="lead" className="text-brand-text">
-          वजन कम करना सिर्फ इच्छाशक्ति (willpower) की बात नहीं है। यह हार्मोन्स और biology का खेल है।
+          {dict.section10.lead}
         </Text>
 
         <Text variant="body">
-          नई दवाइयाँ मदद कर सकती हैं, लेकिन सही जानकारी और डॉक्टर की सलाह सबसे ज़रूरी है।
-          अपने स्वास्थ्य को प्राथमिकता दें और किसी योग्य डॉक्टर से बात करें।
+          {dict.section10.body}
         </Text>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-8">
           <Button size="lg" className="shadow-xl shadow-blue-500/20">
-            अपने नज़दीकी डॉक्टर को खोजें
+            {dict.section10.ctaDoctor}
           </Button>
           <Button variant="outline" size="lg">
-            हमारे न्यूज़लेटर से जुड़ें
+            {dict.section10.ctaNewsletter}
           </Button>
         </div>
       </motion.div>
