@@ -1,0 +1,153 @@
+{
+  "common": {
+    "title": "HealthGuide.in",
+    "tagline": "Trusted and simple health information for parents.",
+    "back": "Go Back",
+    "readMore": "Read More",
+    "disclaimer": "Disclaimer: This website is for informational purposes only. Always consult a doctor before starting any medication.",
+    "copyright": "© 2024 HealthGuide. All rights reserved."
+  },
+  "nav": {
+    "about": "About Us",
+    "glossary": "Glossary",
+    "compare": "Drug Comparison",
+    "bmi": "BMI Calculator"
+  },
+  "hero": {
+    "badge": "Special Information for Parents",
+    "title": "Why is losing weight so <span class='text-brand-primary'>difficult</span>?",
+    "subtitle": "And are Ozempic or Mounjaro the right choices for you? Complete information in simple language.",
+    "ctaPrimary": "Read Full Guide",
+    "ctaSecondary": "Am I Eligible?",
+    "illustrationTitle": "Health Balance",
+    "illustrationSubtitle": "Understanding Metabolism"
+  },
+  "section2": {
+    "title": "Why is losing weight so hard?",
+    "intro": "Our bodies were not built for today's food environment.",
+    "card1Title": "Then vs Now",
+    "thenLabel": "THEN",
+    "thenText": "In the past, food was scarce, so the body evolved to <b>save energy (store fat)</b>.",
+    "nowLabel": "NOW",
+    "nowText": "Today food is abundant, but the body's programming remains the same.",
+    "card2Title": "Inverter Analogy",
+    "analogyText": "“Just like an inverter goes into power save mode when power fails, the body slows down metabolism when you diet.”",
+    "normalMode": "Normal Mode",
+    "powerSaveMode": "Power Save Mode",
+    "dieting": "(Dieting)"
+  },
+  "section3": {
+    "title": "How hunger and hormones work?",
+    "intro": "Our body signals hunger and fullness through specific hormones.",
+    "ghrelin": "Ghrelin",
+    "ghrelinDesc": "The hunger hormone",
+    "leptin": "Leptin",
+    "leptinDesc": "The fullness signal",
+    "insulin": "Insulin",
+    "insulinDesc": "Sugar control",
+    "glp1": "GLP-1",
+    "glp1Desc": "Signal to stop eating",
+    "cardTitle": "What is GLP-1 and how does it work?",
+    "gut": "Gut",
+    "brain": "Brain",
+    "signalText": "GLP-1 sends 'Full' signal",
+    "explanation": "“GLP-1 signals the brain from the gut that the stomach is full.”"
+  },
+  "section4": {
+    "title": "What are Ozempic and Mounjaro?",
+    "intro": "Both are weekly injections that reduce appetite and improve sugar control.",
+    "ozempicTitle": "Ozempic",
+    "ozempicDrug": "Semaglutide",
+    "ozempicDesc": "Works like the GLP-1 hormone. It <b>reduces hunger</b> and helps with <b>sugar control</b>.",
+    "mounjaroTitle": "Mounjaro",
+    "mounjaroDrug": "Tirzepatide",
+    "mounjaroDesc": "Mimics both GLP-1 + GIP hormones. It can be even more effective than Ozempic.",
+    "weeklyInjection": "Weekly Injection",
+    "appetiteControl": "Appetite Control",
+    "provenResult": "Proven Result (STEP Trials)",
+    "dualAction": "Dual Action (GLP-1 + GIP)",
+    "moreWeightLoss": "More Weight Loss (SURMOUNT Trials)"
+  },
+  "section5": {
+    "title": "Side Effects (Explained Honestly)",
+    "intro": "Every medicine has some side effects, and so do these. But with right information, they can be managed.",
+    "commonTitle": "Common Side Effects",
+    "commonDesc": "Nausea, Vomiting, Constipation, Stomach pain, Acidity. These are usually temporary and the body adjusts slowly.",
+    "seriousTitle": "Rare but Serious",
+    "seriousDesc": "Pancreatitis, Gallbladder problem, Thyroid tumor risk (seen in animals, rare in humans).",
+    "doseTitle": "Why is the dose increased slowly?",
+    "doseDesc": "To minimize side effects, doctors always start with a low dose and increase it week by week. This is called Titration.",
+    "warningTitle": "Important Advice",
+    "warningText": "If you or your family has a history of Thyroid cancer (MTC) or MEN 2 syndrome, do not take these medicines. Talk to your doctor openly."
+  },
+  "section6": {
+    "title": "Who is it right for?",
+    "intro": "This medicine is not for everyone. Doctors prescribe it only when weight-related diseases pose a risk.",
+    "qualifiesTitle": "Who qualifies?",
+    "qualifiesList": [
+      "• BMI over <b>30</b> (Obesity)",
+      "• BMI over <b>27</b> + Diabetes, BP, or Cholesterol",
+      "• Pre-diabetes condition"
+    ],
+    "notForTitle": "Who should NOT take?",
+    "notForList": [
+      "• Cosmetic weight loss (just to look good)",
+      "• Pregnant women",
+      "• Without doctor's advice"
+    ],
+    "consultText": "Doctor's advice and prescription are mandatory. Do not self-medicate."
+  },
+  "section7": {
+    "title": "It is not magic (Lifestyle Matters)",
+    "intro": "Medicine is just a support. If you don't change your lifestyle, weight can come back after stopping medicine.",
+    "points": [
+      "High Protein Diet",
+      "Light Strength Training",
+      "Proper Sleep (7-8 hours)",
+      "Stress Management"
+    ],
+    "quote": "“Medicine reduces hunger, but what to eat is your choice.”"
+  },
+  "section8": {
+    "title": "Cost and Considerations in India",
+    "intro": "These medicines are not cheap and may need to be taken for a long time.",
+    "costTitle": "Expensive Medicines",
+    "costDesc": "Monthly cost can be ₹15,000 - ₹25,000+ (depending on brand and dose).",
+    "timeTitle": "Long Term",
+    "timeDesc": "This is not a 1-month course. You may need to take it for months or years on doctor's advice.",
+    "insuranceTitle": "Insurance",
+    "insuranceDesc": "Currently in India, most health insurance plans do not cover obesity medicines."
+  },
+  "section9": {
+    "title": "Myths vs Truth",
+    "intro": "There are many misconceptions about weight in society. Let's know the truth.",
+    "myth1": "Just eat less and walk, weight will go down.",
+    "truth1": "Obesity is a complex disease. Hormones (Biology) play a big role, not just willpower.",
+    "myth2": "Taking injections will ruin the body.",
+    "truth2": "Under doctor's supervision, these medicines can be safe and prevent many diseases (Diabetes, Heart).",
+    "mythLabel": "MYTH",
+    "truthLabel": "TRUTH",
+    "tapText": "Tap to see Truth"
+  },
+  "section10": {
+    "title": "Take the Right Step (Compassionate Conclusion)",
+    "lead": "Losing weight is not just about willpower. It's a game of hormones and biology.",
+    "body": "New medicines can help, but right information and doctor's advice are most important. Prioritize your health and talk to a qualified doctor.",
+    "ctaDoctor": "Find a Doctor Near You",
+    "ctaNewsletter": "Join Our Newsletter"
+  },
+  "bmi": {
+    "title": "BMI Calculator (Check Weight)",
+    "ageLabel": "Age",
+    "weightLabel": "Weight",
+    "heightLabel": "Height",
+    "feetLabel": "Feet",
+    "inchesLabel": "Inches",
+    "calculateBtn": "Calculate Result",
+    "scoreLabel": "BMI Score",
+    "underweight": "Underweight",
+    "normal": "Normal",
+    "overweight": "Overweight",
+    "obese": "Obese"
+  }
+}

@@ -4,10 +4,16 @@ export const calculatorGroups = [
     title: "BMI Calculator for Women Over 50",
     hindiTitle: "50+ महिलाओं के लिए बीएमआई कैलकुलेटर",
     description: "उम्र के साथ महिलाओं का शरीर बदलता है। मेनोपॉज (Menopause) के बाद वजन बढ़ना आम है। अपने सही वजन को जानें।",
+    descriptionEn: "Women's bodies change with age. Weight gain after menopause is common. Know your healthy weight.",
     tips: [
       "कैल्शियम और विटामिन डी (Bone Health) पर ध्यान दें।",
       "प्रोटीन (Protein) का सेवन बढ़ाएं ताकि मांसपेशियों (Muscles) की कमी न हो।",
       "हृदय स्वास्थ्य (Heart Health) के लिए नियमित जांच कराएं।"
+    ],
+    tipsEn: [
+      "Focus on Calcium and Vitamin D for bone health.",
+      "Increase protein intake to prevent muscle loss.",
+      "Get regular checkups for heart health."
     ]
   },
   {
@@ -15,10 +21,16 @@ export const calculatorGroups = [
     title: "BMI Calculator for Men in India",
     hindiTitle: "भारतीय पुरुषों के लिए बीएमआई कैलकुलेटर",
     description: "भारतीय पुरुषों में पेट की चर्बी (Belly Fat) का खतरा अधिक होता है, जिससे डायबिटीज और हार्ट डिजीज का जोखिम बढ़ता है।",
+    descriptionEn: "Indian men are at higher risk of belly fat, which increases the risk of diabetes and heart disease.",
     tips: [
       "चावल और रोटी (Carbs) की मात्रा कम करें।",
       "स्ट्रेंथ ट्रेनिंग (Strength Training) शुरू करें।",
       "तनाव (Stress) प्रबंधन करें।"
+    ],
+    tipsEn: [
+      "Reduce intake of rice and roti (carbs).",
+      "Start strength training.",
+      "Manage stress."
     ]
   },
   {
@@ -26,10 +38,16 @@ export const calculatorGroups = [
     title: "BMI Calculator for Parents",
     hindiTitle: "माता-पिता के लिए बीएमआई कैलकुलेटर",
     description: "परिवार की देखभाल करते समय खुद की सेहत न भूलें। स्वस्थ वजन बनाए रखने से आप अपने बच्चों के साथ लंबा समय बिता सकते हैं।",
+    descriptionEn: "Don't forget your health while caring for family. Maintaining a healthy weight helps you spend more time with your kids.",
     tips: [
       "घर का बना खाना (Home Cooked Meals) ही खाएं।",
       "नियमित सैर (Walking) करें।",
       "बच्चों को भी स्वस्थ आदतें सिखाएं।"
+    ],
+    tipsEn: [
+      "Eat home-cooked meals.",
+      "Walk regularly.",
+      "Teach healthy habits to children too."
     ]
   }
 ];

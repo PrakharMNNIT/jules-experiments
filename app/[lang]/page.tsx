@@ -10,24 +10,37 @@ import { Section7 } from "@/components/sections/Section7";
 import { Section8 } from "@/components/sections/Section8";
 import { Section9 } from "@/components/sections/Section9";
 import { Section10 } from "@/components/sections/Section10";
+import { getDictionary } from "@/lib/get-dictionary";
+import { Locale } from "@/i18n-config";
 
-export default function Home() {
+interface PageProps {
+  params: Promise<{ lang: Locale }>;
+}
+
+export async function generateStaticParams() {
+  return [{ lang: "hi" }, { lang: "en" }];
+}
+
+export default async function Home({ params }: PageProps) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <Header dict={dict} lang={lang} />
       <main className="flex-1">
-        <HeroSection />
-        <Section2 />
-        <Section3 />
-        <Section4 />
-        <Section5 />
-        <Section6 />
-        <Section7 />
-        <Section8 />
-        <Section9 />
-        <Section10 />
+        <HeroSection dict={dict} />
+        <Section2 dict={dict} />
+        <Section3 dict={dict} />
+        <Section4 dict={dict} />
+        <Section5 dict={dict} />
+        <Section6 dict={dict} />
+        <Section7 dict={dict} />
+        <Section8 dict={dict} />
+        <Section9 dict={dict} />
+        <Section10 dict={dict} />
       </main>
-      <Footer />
+      <Footer dict={dict} lang={lang} />
     </div>
   );
 }

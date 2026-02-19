@@ -13,3 +13,131 @@
  GET / 200 in 1984ms (compile: 848ms, render: 1136ms)
 ✓ Compiled in 63ms
  GET / 200 in 646ms (compile: 150ms, render: 495ms)
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+✓ Compiled in 373ms
+○ Compiling middleware ...
+⨯ ./middleware.ts:3:1
+Module not found: Can't resolve './i18n-config'
+[0m [90m 1 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+ [90m 2 |[39m [36mimport[39m type { [33mNextRequest[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { i18n } [36mfrom[39m [32m"./i18n-config"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { match [36mas[39m matchLocale } [36mfrom[39m [32m"@formatjs/intl-localematcher"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mNegotiator[39m [36mfrom[39m [32m"negotiator"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./middleware.ts:3:1
+Module not found: Can't resolve './i18n-config'
+[0m [90m 1 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+ [90m 2 |[39m [36mimport[39m type { [33mNextRequest[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { i18n } [36mfrom[39m [32m"./i18n-config"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { match [36mas[39m matchLocale } [36mfrom[39m [32m"@formatjs/intl-localematcher"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mNegotiator[39m [36mfrom[39m [32m"negotiator"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./middleware.ts:4:1
+Module not found: Can't resolve '@formatjs/intl-localematcher'
+[0m [90m 2 |[39m [36mimport[39m type { [33mNextRequest[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+ [90m 3 |[39m [36mimport[39m { i18n } [36mfrom[39m [32m"./i18n-config"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { match [36mas[39m matchLocale } [36mfrom[39m [32m"@formatjs/intl-localematcher"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mNegotiator[39m [36mfrom[39m [32m"negotiator"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mfunction[39m getLocale(request[33m:[39m [33mNextRequest[39m)[33m:[39m string [33m|[39m undefined {[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./middleware.ts:4:1
+Module not found: Can't resolve '@formatjs/intl-localematcher'
+[0m [90m 2 |[39m [36mimport[39m type { [33mNextRequest[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+ [90m 3 |[39m [36mimport[39m { i18n } [36mfrom[39m [32m"./i18n-config"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { match [36mas[39m matchLocale } [36mfrom[39m [32m"@formatjs/intl-localematcher"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mNegotiator[39m [36mfrom[39m [32m"negotiator"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mfunction[39m getLocale(request[33m:[39m [33mNextRequest[39m)[33m:[39m string [33m|[39m undefined {[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./middleware.ts:5:1
+Module not found: Can't resolve 'negotiator'
+[0m [90m 3 |[39m [36mimport[39m { i18n } [36mfrom[39m [32m"./i18n-config"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { match [36mas[39m matchLocale } [36mfrom[39m [32m"@formatjs/intl-localematcher"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mNegotiator[39m [36mfrom[39m [32m"negotiator"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mfunction[39m getLocale(request[33m:[39m [33mNextRequest[39m)[33m:[39m string [33m|[39m undefined {
+ [90m 8 |[39m   [36mconst[39m negotiatorHeaders[33m:[39m [33mRecord[39m[33m<[39m[33mstring[39m[33m,[39m string[33m>[39m [33m=[39m {}[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./middleware.ts:5:1
+Module not found: Can't resolve 'negotiator'
+[0m [90m 3 |[39m [36mimport[39m { i18n } [36mfrom[39m [32m"./i18n-config"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { match [36mas[39m matchLocale } [36mfrom[39m [32m"@formatjs/intl-localematcher"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mNegotiator[39m [36mfrom[39m [32m"negotiator"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mfunction[39m getLocale(request[33m:[39m [33mNextRequest[39m)[33m:[39m string [33m|[39m undefined {
+ [90m 8 |[39m   [36mconst[39m negotiatorHeaders[33m:[39m [33mRecord[39m[33m<[39m[33mstring[39m[33m,[39m string[33m>[39m [33m=[39m {}[33m;[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./middleware.ts:3:1
+Module not found: Can't resolve './i18n-config'
+[0m [90m 1 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+ [90m 2 |[39m [36mimport[39m type { [33mNextRequest[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { i18n } [36mfrom[39m [32m"./i18n-config"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { match [36mas[39m matchLocale } [36mfrom[39m [32m"@formatjs/intl-localematcher"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mNegotiator[39m [36mfrom[39m [32m"negotiator"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./middleware.ts:3:1
+Module not found: Can't resolve './i18n-config'
+[0m [90m 1 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+ [90m 2 |[39m [36mimport[39m type { [33mNextRequest[39m } [36mfrom[39m [32m"next/server"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m { i18n } [36mfrom[39m [32m"./i18n-config"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m { match [36mas[39m matchLocale } [36mfrom[39m [32m"@formatjs/intl-localematcher"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mNegotiator[39m [36mfrom[39m [32m"negotiator"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+✓ Compiled in 98ms
+✓ Compiled in 51ms
+✓ Compiled in 12ms
+○ Compiling /[lang] ...
+ GET /hi 200 in 6.6s (compile: 6.1s, proxy.ts: 12ms, generate-params: 995ms, render: 524ms)

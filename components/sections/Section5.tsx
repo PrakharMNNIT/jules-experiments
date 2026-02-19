@@ -6,8 +6,13 @@ import { Heading, Text } from "@/components/ui/Typography";
 import { Card } from "@/components/ui/Card";
 import { ChevronDown, ChevronUp, AlertCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Dictionary } from "@/dictionaries/definition";
 
-export function Section5() {
+interface Section5Props {
+  dict: Dictionary;
+}
+
+export function Section5({ dict }: Section5Props) {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const toggle = (id: string) => {
@@ -17,20 +22,20 @@ export function Section5() {
   const sideEffects = [
     {
       id: "common",
-      title: "Common Side Effects (आम दुष्प्रभाव)",
-      content: "मितली (Nausea), उल्टी (Vomiting), कब्ज (Constipation), पेट दर्द, Acidity. ये आमतौर पर temporary होते हैं और शरीर धीरे-धीरे adjust कर लेता है।",
+      title: dict.section5.commonTitle,
+      content: dict.section5.commonDesc,
       icon: "🤢",
     },
     {
       id: "serious",
-      title: "Rare but Serious (गंभीर लेकिन दुर्लभ)",
-      content: "Pancreatitis (अग्नाशय की सूजन), Gallbladder problem, Thyroid tumor risk (जानवरों में देखा गया है, इंसानों में rare है)।",
+      title: dict.section5.seriousTitle,
+      content: dict.section5.seriousDesc,
       icon: "⚠️",
     },
     {
       id: "dose",
-      title: "Dose धीरे-धीरे क्यों बढ़ाई जाती है?",
-      content: "Side effects कम करने के लिए डॉक्टर हमेशा कम dose से शुरू करते हैं और हफ़्ते दर हफ़्ते बढ़ाते हैं। इसे Titration कहते हैं।",
+      title: dict.section5.doseTitle,
+      content: dict.section5.doseDesc,
       icon: "📈",
     },
   ];
@@ -39,9 +44,9 @@ export function Section5() {
     <Section background="soft" className="py-20">
       <div className="flex flex-col gap-12 max-w-3xl mx-auto">
         <div className="text-center">
-          <Heading level={2}>Side Effects (ईमानदारी से समझाएँ)</Heading>
+          <Heading level={2}>{dict.section5.title}</Heading>
           <Text variant="body">
-            हर दवा के कुछ side effects होते हैं, और इनके भी हैं। लेकिन सही जानकारी से इनसे बचा जा सकता है।
+            {dict.section5.intro}
           </Text>
         </div>
 
@@ -80,9 +85,9 @@ export function Section5() {
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 flex items-start gap-4">
           <AlertCircle className="text-amber-500 shrink-0 mt-1" />
           <div>
-            <h4 className="font-bold text-amber-800 mb-2">ज़रूरी सलाह</h4>
+            <h4 className="font-bold text-amber-800 mb-2">{dict.section5.warningTitle}</h4>
             <p className="text-sm text-amber-700">
-              अगर आपको या आपके परिवार में किसी को Thyroid cancer (MTC) या MEN 2 syndrome का इतिहास है, तो ये दवाइयाँ नहीं लेनी चाहिए। डॉक्टर से खुलकर बात करें।
+              {dict.section5.warningText}
             </p>
           </div>
         </div>
