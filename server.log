@@ -141,3 +141,10 @@ https://nextjs.org/docs/messages/module-not-found
 ✓ Compiled in 12ms
 ○ Compiling /[lang] ...
  GET /hi 200 in 6.6s (compile: 6.1s, proxy.ts: 12ms, generate-params: 995ms, render: 524ms)
+ GET /hi 200 in 1946ms (compile: 749ms, proxy.ts: 194ms, generate-params: 592ms, render: 1003ms)
+ GET /en 200 in 231ms (compile: 81ms, proxy.ts: 57ms, generate-params: 50ms, render: 94ms)
+○ Compiling /[lang]/compare/[slug] ...
+ GET /hi/compare/ozempic-vs-wegovy 200 in 9.8s (compile: 8.9s, proxy.ts: 30ms, generate-params: 649ms, render: 919ms)
+ GET /hi/calculator/parents 200 in 4.4s (compile: 4.1s, proxy.ts: 18ms, generate-params: 1022ms, render: 258ms)
+○ Compiling /[lang]/glossary/[term] ...
+ GET /hi/glossary/bmi 200 in 5.3s (compile: 4.8s, proxy.ts: 46ms, generate-params: 1626ms, render: 466ms)
