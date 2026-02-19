@@ -1,11 +1,11 @@
 import { i18n } from "@/i18n-config";
 import { comparisonPairs } from "@/data/comparisons";
-import { Heading, Text } from "@/components/ui/Typography";
+import { Heading } from "@/components/ui/Typography";
 import { Card } from "@/components/ui/Card";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import { ArrowLeft, Check, X } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
 import { Locale } from "@/i18n-config";
 import { getDictionary } from "@/lib/get-dictionary";
@@ -151,7 +151,7 @@ export default async function ComparisonPage({ params }: Props) {
              <div className="bg-slate-900 text-white rounded-3xl p-8 md:p-12 text-center shadow-2xl">
                 <h3 className="text-2xl font-bold mb-4 text-emerald-400">{content.labels.finalVerdict}</h3>
                 <p className="text-lg md:text-xl leading-relaxed opacity-90 mb-8">
-                   "{content.conclusion}"
+                   &quot;{content.conclusion}&quot;
                 </p>
                 <div className="flex justify-center gap-4">
                    <Button variant="secondary" className="bg-white text-slate-900 hover:bg-slate-100">

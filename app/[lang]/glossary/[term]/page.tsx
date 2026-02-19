@@ -1,6 +1,6 @@
 import { i18n } from "@/i18n-config";
 import { glossaryTerms } from "@/data/glossary";
-import { Heading, Text } from "@/components/ui/Typography";
+import { Heading } from "@/components/ui/Typography";
 import { Card } from "@/components/ui/Card";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";

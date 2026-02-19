@@ -148,3 +148,6 @@ https://nextjs.org/docs/messages/module-not-found
  GET /hi/calculator/parents 200 in 4.4s (compile: 4.1s, proxy.ts: 18ms, generate-params: 1022ms, render: 258ms)
 ○ Compiling /[lang]/glossary/[term] ...
  GET /hi/glossary/bmi 200 in 5.3s (compile: 4.8s, proxy.ts: 46ms, generate-params: 1626ms, render: 466ms)
+✓ Compiled in 6.4s
+✓ Compiled in 204ms
+✓ Compiled in 145ms

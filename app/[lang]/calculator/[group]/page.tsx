@@ -1,11 +1,10 @@
 import { i18n } from "@/i18n-config";
 import { calculatorGroups } from "@/data/calculators";
-import { Heading, Text } from "@/components/ui/Typography";
-import { Card } from "@/components/ui/Card";
+import { Heading } from "@/components/ui/Typography";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { Metadata } from "next";
 import { BMICalculator } from "@/components/features/BMICalculator";
 import { Header } from "@/components/layout/Header";

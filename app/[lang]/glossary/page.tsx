@@ -3,7 +3,7 @@ import { Heading, Text } from "@/components/ui/Typography";
 import { Card } from "@/components/ui/Card";
 import { Section } from "@/components/ui/Section";
 import Link from "next/link";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Locale } from "@/i18n-config";
