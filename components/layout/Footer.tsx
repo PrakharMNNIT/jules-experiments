@@ -16,10 +16,10 @@ export function Footer() {
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-3">
           <div className="flex flex-col gap-2">
-            <h3 className="font-semibold text-brand-heading">Links</h3>
-            <a href="#" className="text-sm text-slate-500 hover:text-brand-primary">About Us</a>
-            <a href="#" className="text-sm text-slate-500 hover:text-brand-primary">Contact</a>
-            <a href="#" className="text-sm text-slate-500 hover:text-brand-primary">Privacy</a>
+            <h3 className="font-semibold text-brand-heading">Explore</h3>
+            <a href="/glossary" className="text-sm text-slate-500 hover:text-brand-primary">Glossary (शब्दावली)</a>
+            <a href="/compare" className="text-sm text-slate-500 hover:text-brand-primary">Drug Comparisons</a>
+            <a href="/calculator/parents" className="text-sm text-slate-500 hover:text-brand-primary">BMI Calculator</a>
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-brand-heading">Resources</h3>
