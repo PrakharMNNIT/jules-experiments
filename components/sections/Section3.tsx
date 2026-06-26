@@ -1,0 +1,85 @@
+"use client";
+
+import React from "react";
+import { Section } from "@/components/ui/Section";
+import { Heading, Text } from "@/components/ui/Typography";
+import { Card } from "@/components/ui/Card";
+import { motion } from "framer-motion";
+import { Brain, Utensils } from "lucide-react";
+import { Dictionary } from "@/dictionaries/definition";
+
+interface Section3Props {
+  dict: Dictionary;
+}
+
+export function Section3({ dict }: Section3Props) {
+  return (
+    <Section background="soft" className="py-20">
+      <div className="flex flex-col gap-12">
+        <div className="text-center max-w-2xl mx-auto">
+          <Heading level={2}>{dict.section3.title}</Heading>
+          <Text variant="body">
+            {dict.section3.intro}
+          </Text>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+             <Card className="hover:shadow-lg transition-shadow bg-red-50 border-red-100">
+                <h4 className="font-bold text-red-600">{dict.section3.ghrelin}</h4>
+                <p className="text-sm text-slate-600 mt-2">{dict.section3.ghrelinDesc}</p>
+             </Card>
+             <Card className="hover:shadow-lg transition-shadow bg-green-50 border-green-100">
+                <h4 className="font-bold text-green-600">{dict.section3.leptin}</h4>
+                <p className="text-sm text-slate-600 mt-2">{dict.section3.leptinDesc}</p>
+             </Card>
+             <Card className="hover:shadow-lg transition-shadow bg-blue-50 border-blue-100">
+                <h4 className="font-bold text-blue-600">{dict.section3.insulin}</h4>
+                <p className="text-sm text-slate-600 mt-2">{dict.section3.insulinDesc}</p>
+             </Card>
+             <Card className="hover:shadow-lg transition-shadow bg-brand-background border-brand-primary">
+                <h4 className="font-bold text-brand-primary">{dict.section3.glp1}</h4>
+                <p className="text-sm text-slate-600 mt-2">{dict.section3.glp1Desc}</p>
+             </Card>
+          </div>
+
+          <Card className="bg-white border-slate-100">
+             <h3 className="text-xl font-bold text-brand-heading mb-6 text-center">{dict.section3.cardTitle}</h3>
+             <div className="flex flex-col items-center gap-6 py-4 relative">
+                <div className="flex items-center gap-4">
+                   <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
+                     <Utensils className="text-orange-500" />
+                   </div>
+                   <div className="text-sm font-medium">{dict.section3.gut}</div>
+                </div>
+
+                <motion.div
+                  className="h-16 w-1 bg-brand-primary rounded-full relative overflow-hidden"
+                >
+                   <motion.div
+                     className="absolute w-full bg-white opacity-50 h-4 rounded-full top-0"
+                     animate={{ top: ["0%", "100%"] }}
+                     transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
+                   />
+                </motion.div>
+
+                <div className="flex items-center gap-4">
+                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                     <Brain className="text-purple-500" />
+                   </div>
+                   <div className="text-sm font-medium">{dict.section3.brain}</div>
+                </div>
+
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-slate-400 max-w-[120px] text-right">
+                   {dict.section3.signalText}
+                </div>
+             </div>
+             <p className="text-sm text-center text-slate-600 px-4 mt-4">
+               {dict.section3.explanation}
+             </p>
+          </Card>
+        </div>
+      </div>
+    </Section>
+  );
+}

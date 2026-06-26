@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --font-noto-sans-devanagari: "Noto Sans Devanagari", sans-serif;
+
+  /* Brand Colors */
+  --brand-primary: #3B82F6; /* blue-500 */
+  --brand-secondary: #10B981; /* emerald-500 */
+  --brand-background: #F0F9FF; /* sky-50 */
+  --brand-text: #334155; /* slate-700 */
+  --brand-heading: #1E293B; /* slate-800 */
+  --brand-accent: #F59E0B; /* amber-500 */
+  --brand-error: #EF4444; /* red-500 */
+}
+
+@theme {
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-background: var(--brand-background);
+  --color-brand-text: var(--brand-text);
+  --color-brand-heading: var(--brand-heading);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-error: var(--brand-error);
+
+  --font-sans: var(--font-noto-sans-devanagari);
+}
+
+body {
+  background-color: var(--brand-background);
+  color: var(--brand-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

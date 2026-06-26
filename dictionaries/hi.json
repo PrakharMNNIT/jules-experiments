@@ -1,0 +1,153 @@
+{
+  "common": {
+    "title": "HealthGuide.in",
+    "tagline": "माता-पिता के लिए स्वास्थ्य से जुड़ी सही और आसान जानकारी।",
+    "back": "वापस जाएँ",
+    "readMore": "और पढ़ें",
+    "disclaimer": "अस्वीकरण: यह वेबसाइट केवल जानकारी के लिए है। कोई भी दवा शुरू करने से पहले हमेशा डॉक्टर से सलाह लें।",
+    "copyright": "© 2024 HealthGuide. सर्वाधिकार सुरक्षित।"
+  },
+  "nav": {
+    "about": "हमारे बारे में",
+    "glossary": "शब्दावली",
+    "compare": "दवा तुलना",
+    "bmi": "बीएमआई कैलकुलेटर"
+  },
+  "hero": {
+    "badge": "माता-पिता के लिए विशेष जानकारी",
+    "title": "वज़न कम करना इतना <span class='text-brand-primary'>मुश्किल</span> क्यों है?",
+    "subtitle": "और क्या Ozempic या Mounjaro आपके लिए सही विकल्प हैं? आसान भाषा में पूरी जानकारी।",
+    "ctaPrimary": "पूरी जानकारी पढ़ें",
+    "ctaSecondary": "क्या मैं योग्य हूँ?",
+    "illustrationTitle": "Health Balance",
+    "illustrationSubtitle": "Understanding Metabolism"
+  },
+  "section2": {
+    "title": "वज़न कम करना इतना मुश्किल क्यों होता है?",
+    "intro": "हमारा शरीर आज के खाने के लिए नहीं बना है।",
+    "card1Title": "पुराना समय vs आज",
+    "thenLabel": "THEN",
+    "thenText": "पहले के समय में खाना कम मिलता था, इसलिए शरीर <b>ऊर्जा बचाने (fat storing)</b> के लिए बना।",
+    "nowLabel": "NOW",
+    "nowText": "आज खाना ज्यादा है, लेकिन शरीर की programming वही है।",
+    "card2Title": "Inverter Analogy",
+    "analogyText": "“जैसे inverter बिजली जाने पर power save mode में चला जाता है, वैसे ही diet करने पर शरीर metabolism slow कर देता है।”",
+    "normalMode": "Normal Mode",
+    "powerSaveMode": "Power Save Mode",
+    "dieting": "(Dieting)"
+  },
+  "section3": {
+    "title": "भूख और हार्मोन कैसे काम करते हैं?",
+    "intro": "हमारा शरीर कुछ खास हार्मोन्स के जरिए भूख और पेट भरने का signal देता है।",
+    "ghrelin": "Ghrelin",
+    "ghrelinDesc": "भूख बढ़ाने वाला हार्मोन",
+    "leptin": "Leptin",
+    "leptinDesc": "पेट भरने का signal",
+    "insulin": "Insulin",
+    "insulinDesc": "शुगर कंट्रोल",
+    "glp1": "GLP-1",
+    "glp1Desc": "खाने के बाद पेट भरने का संदेश",
+    "cardTitle": "GLP-1 क्या है और कैसे काम करता है?",
+    "gut": "Gut (पेट)",
+    "brain": "Brain (दिमाग)",
+    "signalText": "GLP-1 sends 'Full' signal",
+    "explanation": "“GLP-1 पेट से दिमाग को signal देता है कि पेट भर गया है।”"
+  },
+  "section4": {
+    "title": "Ozempic और Mounjaro क्या हैं?",
+    "intro": "ये दोनों weekly injection हैं जो appetite (भूख) कम करते हैं और sugar control improve करते हैं।",
+    "ozempicTitle": "Ozempic",
+    "ozempicDrug": "Semaglutide",
+    "ozempicDesc": "GLP-1 hormone की तरह काम करता है। यह <b>भूख कम</b> करता है और <b>sugar control</b> में मदद करता है।",
+    "mounjaroTitle": "Mounjaro",
+    "mounjaroDrug": "Tirzepatide",
+    "mounjaroDesc": "GLP-1 + GIP दोनों hormone को mimic करता है। यह Ozempic से भी ज्यादा effective हो सकता है।",
+    "weeklyInjection": "Weekly Injection",
+    "appetiteControl": "Appetite Control",
+    "provenResult": "Proven Result (STEP Trials)",
+    "dualAction": "Dual Action (GLP-1 + GIP)",
+    "moreWeightLoss": "More Weight Loss (SURMOUNT Trials)"
+  },
+  "section5": {
+    "title": "Side Effects (ईमानदारी से समझाएँ)",
+    "intro": "हर दवा के कुछ side effects होते हैं, और इनके भी हैं। लेकिन सही जानकारी से इनसे बचा जा सकता है।",
+    "commonTitle": "Common Side Effects (आम दुष्प्रभाव)",
+    "commonDesc": "मितली (Nausea), उल्टी (Vomiting), कब्ज (Constipation), पेट दर्द, Acidity. ये आमतौर पर temporary होते हैं और शरीर धीरे-धीरे adjust कर लेता है।",
+    "seriousTitle": "Rare but Serious (गंभीर लेकिन दुर्लभ)",
+    "seriousDesc": "Pancreatitis (अग्नाशय की सूजन), Gallbladder problem, Thyroid tumor risk (जानवरों में देखा गया है, इंसानों में rare है)।",
+    "doseTitle": "Dose धीरे-धीरे क्यों बढ़ाई जाती है?",
+    "doseDesc": "Side effects कम करने के लिए डॉक्टर हमेशा कम dose से शुरू करते हैं और हफ़्ते दर हफ़्ते बढ़ाते हैं। इसे Titration कहते हैं।",
+    "warningTitle": "ज़रूरी सलाह",
+    "warningText": "अगर आपको या आपके परिवार में किसी को Thyroid cancer (MTC) या MEN 2 syndrome का इतिहास है, तो ये दवाइयाँ नहीं लेनी चाहिए। डॉक्टर से खुलकर बात करें।"
+  },
+  "section6": {
+    "title": "किन लोगों के लिए सही है?",
+    "intro": "यह दवा हर किसी के लिए नहीं है। डॉक्टर इसे तभी देते हैं जब वजन से जुड़ी बीमारियाँ बढ़ने का खतरा हो।",
+    "qualifiesTitle": "Who qualifies? (योग्य कौन हैं)",
+    "qualifiesList": [
+      "• BMI <b>30</b> से ज्यादा हो (Obesity)",
+      "• BMI <b>27</b> से ज्यादा हो + Diabetes, BP, या Cholesterol हो",
+      "• Pre-diabetes की स्थिति हो"
+    ],
+    "notForTitle": "Who should NOT take? (किन्हें नहीं लेनी चाहिए)",
+    "notForList": [
+      "• सिर्फ अच्छा दिखने के लिए (Cosmetic weight loss)",
+      "• गर्भवती महिलाएं (Pregnant women)",
+      "• बिना डॉक्टर की सलाह के"
+    ],
+    "consultText": "डॉक्टर की सलाह और Prescription अनिवार्य है। खुद से दवा न लें।"
+  },
+  "section7": {
+    "title": "यह जादू नहीं है (Lifestyle Matters)",
+    "intro": "दवा सिर्फ एक सहारा (support) है। अगर आपने lifestyle नहीं बदली, तो दवा बंद करने पर वजन वापस आ सकता है।",
+    "points": [
+      "High Protein Diet (कम तेल-घी)",
+      "Light Strength Training (हल्का व्यायाम)",
+      "Proper Sleep (7-8 घंटे की नींद)",
+      "Stress Management (तनाव कम करें)"
+    ],
+    "quote": "“दवा भूख कम करती है, लेकिन क्या खाना है यह आपको चुनना होगा।”"
+  },
+  "section8": {
+    "title": "भारत में खर्च और सोच",
+    "intro": "ये दवाइयाँ सस्ती नहीं हैं और इन्हें लंबे समय तक लेना पड़ सकता है।",
+    "costTitle": "महंगी दवाइयाँ",
+    "costDesc": "महीने का खर्च ₹15,000 - ₹25,000+ हो सकता है (ब्रांड और डोज़ पर निर्भर)।",
+    "timeTitle": "लंबे समय तक",
+    "timeDesc": "यह कोई 1 महीने का कोर्स नहीं है। इसे डॉक्टर की सलाह पर कई महीनों या सालों तक लेना पड़ सकता है।",
+    "insuranceTitle": "बीमा (Insurance)",
+    "insuranceDesc": "भारत में अभी अधिकतर हेल्थ इंश्योरेंस मोटापे की दवाइयों का खर्च नहीं उठाते।"
+  },
+  "section9": {
+    "title": "मिथक बनाम सच्चाई",
+    "intro": "समाज में वजन को लेकर कई गलतफहमियाँ हैं। आइए सच जानें।",
+    "myth1": "बस कम खाओ और चलो, वजन कम हो जाएगा।",
+    "truth1": "मोटापा (Obesity) एक जटिल बीमारी है। हार्मोन्स (Biology) इसमें बड़ी भूमिका निभाते हैं, सिर्फ इच्छाशक्ति नहीं।",
+    "myth2": "Injection लेने से शरीर खराब हो जाएगा।",
+    "truth2": "डॉक्टर की देखरेख में ये दवाइयाँ सुरक्षित हो सकती हैं और कई बीमारियों (Diabetes, Heart) से बचा सकती हैं।",
+    "mythLabel": "MYTH (गलतफहमी)",
+    "truthLabel": "TRUTH (सच)",
+    "tapText": "Tap to see Truth"
+  },
+  "section10": {
+    "title": "सही कदम उठाएँ (Compassionate Conclusion)",
+    "lead": "वजन कम करना सिर्फ इच्छाशक्ति (willpower) की बात नहीं है। यह हार्मोन्स और biology का खेल है।",
+    "body": "नई दवाइयाँ मदद कर सकती हैं, लेकिन सही जानकारी और डॉक्टर की सलाह सबसे ज़रूरी है। अपने स्वास्थ्य को प्राथमिकता दें और किसी योग्य डॉक्टर से बात करें。",
+    "ctaDoctor": "अपने नज़दीकी डॉक्टर को खोजें",
+    "ctaNewsletter": "हमारे न्यूज़लेटर से जुड़ें"
+  },
+  "bmi": {
+    "title": "BMI Calculator (वजन जांचें)",
+    "ageLabel": "Age (उम्र)",
+    "weightLabel": "Weight (वजन)",
+    "heightLabel": "Height (लम्बाई)",
+    "feetLabel": "Feet",
+    "inchesLabel": "Inches",
+    "calculateBtn": "Calculate Result",
+    "scoreLabel": "BMI Score",
+    "underweight": "Underweight (कम वजन)",
+    "normal": "Normal (सामान्य)",
+    "overweight": "Overweight (अधिक वजन)",
+    "obese": "Obese (मोटापा)"
+  }
+}
